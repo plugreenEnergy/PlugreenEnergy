@@ -4,8 +4,11 @@ public enum EnergyZone {
     WESTUS("westus"),
     EASTUS("eastus");
 
-    private String name;
-    EnergyZone(String name) {
-        this.name = name;
+    private String id;
+    EnergyZone(String id) {
+        this.id = id;
+    }
+    public String getId(){
+        return this.id;
     }
 }
